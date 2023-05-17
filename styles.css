@@ -455,8 +455,7 @@ a {
 
 .social__links {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 46px;
 }
 
 .social__links--item {
@@ -526,75 +525,69 @@ a {
 }
 
 .logo-1 {
-    width: 41px;
-    height: 46.7px;
-    fill: #AFB1B8;
+    font-size: 41px;
+    color: #AFB1B8;
     margin-right: 64px;
     margin-left: 64px;
 }
 
 .logo-2 {
-    width: 40px;
-    height: 52px;
-    fill: #AFB1B8;
+    font-size: 41px;
+    color: #AFB1B8;
     margin-right: 65px;
     margin-left: 65px;
 }
 
 .logo-3  {
-    width: 41px;
-    height: 42.6px;
-    fill: #AFB1B8;
+    font-size: 41px;
+    color: #AFB1B8;
     margin-right: 65px;
     margin-left: 61px;
 }
 
 .logo-4 {
-    width: 79.66px;
-    height: 42.02px;
-    fill: #AFB1B8;
+    font-size: 41px;
+    color: #AFB1B8;
     margin-right: 43px;
     margin-left: 43px;
 }
 
 .logo-5 {
-    width: 62.54px;
-    height: 45.43px;
-    fill: #AFB1B8;
+    font-size: 41px;
+    color: #AFB1B8;
     margin-right: 54px;
     margin-left: 54px;
 }
 
 .logo-6 {
-    width: 88px;
-    height: 45px;
-    fill: #AFB1B8;
+    font-size: 41px;
+    color: #AFB1B8;
     margin-right: 38px;
     margin-left: 38px;
 }
 
 .logo-1:hover {
-    fill: #2196f3;
+    color: #2196f3;
 }
 
 .logo-2:hover {
-    fill: #2196f3;
+    color: #2196f3;
 }
 
 .logo-3:hover { 
-    fill: #2196f3;
+    color: #2196f3;
 }
 
 .logo-4:hover {
-    fill: #2196f3;
+    color: #2196f3;
 }
 
 .logo-5:hover {
-    fill: #2196f3;
+    color: #2196f3;
 }
 
 .logo-6:hover {
-    fill: #2196f3;
+    color: #2196f3;
 }
 
 .bg-black {
@@ -718,36 +711,29 @@ address {
 }
 
 .social-one {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
-    margin-left: 12px;
-    margin-right: 12px;                                                                                                                                             
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 auto;                                                                                                                                             
 }
 
 .social-two {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
-    margin-left: 12px;
-    margin-right: 12px;     
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 auto;
+        
 }
 
 .social-three {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
-    margin-left: 12px;
-    margin-right: 12.84px; 
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 auto;
 }
 
 .social-four {
-    fill: #FFFFFF;
+    color: #FFFFFF;
     width: 20px;
     height: 20px;
-    margin-left: 12px;
-    margin-right: 12px; 
-
+    margin: 0 auto;
 }
 
 .link-item:hover {
@@ -873,6 +859,8 @@ address {
     line-height: 30px;
     letter-spacing: 0.03em;
 }
+
+
 
 
 
