@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -174,6 +176,15 @@ a {
   background-image: url(Img.jpg);
 }
 
+@media screen and (max-width: 768px) {
+    .hero {
+        /* img overlay */
+    width: 480px;
+    height: 400px;
+    background-image: url(/header-img.png);
+    }
+}
+
 .hero-text {
     width: 696px;
     height: 120px;
@@ -200,6 +211,51 @@ a {
     align-items: center;
 }
 
+ @media screen and (max-width: 767px) {
+     .navigation {
+         display: none;
+     }
+ }
+
+@media screen and (min-width: 768px) {
+      .header {
+          padding: 20px 15px;
+          justify-content: initial;
+      }
+  }
+
+.burger-menu {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+      margin-right: 85px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        line-height: 31px;
+        margin-right: 95px;
+    }
+}
+
+header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 .nav-items {
     display: flex;
     margin-left: 93px;
@@ -214,11 +270,58 @@ a {
     margin-left: auto;
 }
 
-.info-section {
-    margin: 0 auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px
+
+@media screen and (max-width: 768px) {
+    .info-section {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 450px;
+        height: 994px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-items {
+        padding: 0;
+        margin-top: 60px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .info-item {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .info-section {
+        margin: 0 auto;
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;   
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-bg:before {
+        width: 450px;
+        height: 120px;  
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .info-bg:before {
+        width: 270px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-bg:before {
+        width: 450px;
+        height: 120px;
+    }
 }
 
 .info-items {
@@ -229,48 +332,19 @@ a {
     margin-bottom: 94px;
 }
 
-.info-item {
-    margin-right: 30px;
-}
 
 .info-bg1::before {
     display: block;
     content: '';
-    width: 270px;
-    height: 120px;
     background-image: url(Vector.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color:#F5F4FA;
 }
 
-.info-bg1::before {
-    display: block;
-    content: '';
-    width: 270px;
-    height: 120px;
-    background-image: url(Vector.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-}
-
-.info-bg1::before {
-    display: block;
-    content: '';
-    width: 270px;
-    height: 120px;
-    background-image: url(Vector.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-}
-
 .info-bg2::before {
     display: block;
     content: '';
-    width: 270px;
-    height: 120px;
     background-image: url(clock1.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -280,8 +354,6 @@ a {
 .info-bg3::before {
     display: block;
     content: '';
-    width: 270px;
-    height: 120px;
     background-image: url(diagram1.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -291,8 +363,6 @@ a {
 .info-bg4::before {
     display: block;
     content: '';
-    width: 270px;
-    height: 120px;
     background-image: url(astronaut1.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -311,6 +381,31 @@ a {
     color: #212121;
 }
 
+@media screen and (max-width: 768px) {
+    .info-text {
+        margin-left: 135px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-paragraph {
+        width: 450px;
+        height: 50px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        margin-bottom: 30px;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
+}
+
+
+
 .info-paragraph {
     width: 270px;
     height: 16px;
@@ -320,9 +415,9 @@ a {
     font-size: 14px;
     line-height: 1.714;
     color: #757575;
-    margin-top: 10px;
-    
+    margin-top: 10px; 
 }
+
 
 .nav-item1::after {
     position: absolute;
