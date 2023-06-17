@@ -215,6 +215,16 @@ a {
      .navigation {
          display: none;
      }
+
+     .logo-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+     }
+
+     .item-logo {
+        padding: 20px;
+     }
  }
 
 @media screen and (min-width: 768px) {
@@ -607,8 +617,43 @@ header {
 }
 
 .item-logo {
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
+
+ @media screen and (max-width: 767px) {
+     .logo-items {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         width: 450px;
+         height: 399px;
+         padding-right: 15px;
+         padding-left: 15px;
+
+         gap: 10px;
+         /* align-content: center;
+         justify-items: center; */
+     }
+
+     .item-logo {
+         padding: 15px;
+     }
+
+     .client-heading {
+        /* Постійні клієнти */
+        width: 314px;
+        height: 33px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        /* identical to box height */
+         padding-right: 83px;
+         padding-left: 83px;
+        letter-spacing: 0.03em;
+        color: #212121;
+     }
+ }
 
 .logo-a {
     display: flex;
