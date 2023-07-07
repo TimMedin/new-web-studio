@@ -1,0 +1,70 @@
+.link-item:hover {
+    background-color: #2196F3;
+}
+
+
+.btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn-about {
+    background-color: #F5F4FA;
+    width: 125px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 200ms;
+}
+
+.btn-about:hover {
+    background-color: #2196F3;
+}
+
+.btn-list-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p-list-item {
+    width: 355px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card-text {
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.p-heading {
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+
+.p-card-paragraph {
+    color: #757575;
+    width: 322px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}

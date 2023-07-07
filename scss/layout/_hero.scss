@@ -1,0 +1,33 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: url(/images/Img.jpg);
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+    max-width: 480px;
+    height: 400px;
+    background-image: url(/images/header-img.png);
+    }
+}
+
+
+.hero-text {
+    width: 696px;
+    height: 120px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

@@ -1,0 +1,132 @@
+.bg-black {
+    background: #2F303A;
+}
+
+.studio-footer {
+    width: 145px;
+    height: 31px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 28px;
+    padding-left: 145px;
+}
+
+.adress {
+    margin-top: 15px;
+    width: 231px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.number {
+    width: 231px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.email-footer {
+    margin-top: 9px;
+    width: 231px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.footer-social {
+    display: flex;
+    padding: 0;
+}
+
+
+.footer-flex {
+    display: flex;
+}
+
+.footer-heading {
+    margin-top: 72px;
+    width: 116px;
+    height: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+address {
+    margin-right: 70px;
+}
+
+.social-link {
+    display: flex;
+    padding: 0;
+}
+
+.link-items:not(:last-child) {
+    margin-right: 15px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-one {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.social-two {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 auto;
+
+}
+
+.social-three {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.social-four {
+    color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
