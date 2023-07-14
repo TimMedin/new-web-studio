@@ -60,44 +60,42 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    @include adaptive (mobile-only) {
+            width: 314px;
+            height: 33px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 33px;
+            /* identical to box height */
+            padding-right: 83px;
+            padding-left: 83px;
+            letter-spacing: 0.03em;
+            color: #212121;  
+        }
+    
 }
 
 .logo-items {
     display: flex;
     justify-content: center;
-}
-
-
-@media screen and (max-width: 767px) {
-    .logo-items {
+     @include adaptive (mobile-only) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 450px;
         height: 399px;
         padding-right: 15px;
         padding-left: 15px;
-
         gap: 10px;
     }
+}
+
+
+@media screen and (max-width: 767px) {
 
     .item-logo {
         padding: 15px;
-    }
-
-    .client-heading {
-        /* Постійні клієнти */
-        width: 314px;
-        height: 33px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 33px;
-        /* identical to box height */
-        padding-right: 83px;
-        padding-left: 83px;
-        letter-spacing: 0.03em;
-        color: #212121;
     }
 }
 

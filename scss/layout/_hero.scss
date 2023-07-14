@@ -7,15 +7,13 @@
   max-width: 1600px;
   height: 600px;
   background-image: url(/images/Img.jpg);
+    @include adaptive (mobile-only) {
+      max-width: 480px;
+      height: 400px;
+      background-image: url(/images/header-img.png);
+      }
 }
 
-@media screen and (max-width: 480px) {
-    .hero {
-    max-width: 480px;
-    height: 400px;
-    background-image: url(/images/header-img.png);
-    }
-}
 
 
 .hero-text {
@@ -30,4 +28,17 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    @include adaptive (mobile-only) {
+        max-width: 360px;
+        color: #FFF;
+        text-align: center;
+        font-size: 26px;
+        font-family: Roboto;
+        font-weight: 900;
+        line-height: 42px;
+        letter-spacing: 1.56px;
+        text-transform: uppercase;                  
+    }
 }
+
+

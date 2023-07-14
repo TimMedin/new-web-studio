@@ -7,6 +7,9 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #757575;
+    @include adaptive (mobile-only) {
+        display: none;
+    }
 }
 
 .email {
@@ -19,6 +22,9 @@
     letter-spacing: 0.02em;
     color: #757575;
     margin-right: 50px;
+    @include adaptive (mobile-only) {
+            display: none;
+        }
 }
 
 .email:hover {
@@ -164,10 +170,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .header {
-        padding-left: 0;
-        max-width: 768px;
-    }
 
     .nav-items {
         margin-left: 55px !important;
@@ -196,57 +198,28 @@
          display: none;
      }
 
-     .logo-items {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         gap: 10px;
-     }
-
      .item-logo {
          padding: 20px;
      }
  }
 
- @media screen and (max-width: 480px) {
-     .header {
-         max-width: 480px;
-         height: 60px;
-         padding: 0;
-         /* padding: 20px 15px;
-          justify-content: initial; */
-     }
-
-     .contacts {
-         margin: 0;
-         padding: 0;
-     }
-
-     .tel {
-         display: none;
-     }
-
-     .hero-text {
-         max-width: 360px;
-         color: #FFF;
-         text-align: center;
-         font-size: 26px;
-         font-family: Roboto;
-         font-weight: 900;
-         line-height: 42px;
-         letter-spacing: 1.56px;
-         text-transform: uppercase;
-     }
-
-     .email {
-         display: none;
-     }
- }
 
  header {
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include adaptive (mobile-only) {
+        padding-left: 0;
+        max-width: 768px;
+    }
+        @include adaptive (mobile) {
+            max-width: 480px;
+            height: 60px;
+            padding: 0;
+            /* padding: 20px 15px;
+            justify-content: initial; */
+        }
   }
 
 .nav-items {
@@ -261,6 +234,10 @@
 .contacts {
     display: flex;
     margin-left: auto;
+    @include adaptive (mobile-only) {
+         margin: 0;
+         padding: 0;
+    }
 }
 
 .nav-item1::after {
@@ -289,6 +266,8 @@
     margin-top: 9px;
     padding: 0;
 }
+
+
 
 .web2 {
     font-family: 'Raleway', sans-serif;

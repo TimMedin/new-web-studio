@@ -41,7 +41,11 @@
     cursor: pointer;
     display: flex;
     padding: 0;
+    @include adaptive (mobile-only) {
+        display: none !important;
+    }
 }
+
 
 .line {
     fill: none;
@@ -89,6 +93,7 @@
         display: none !important;
     }
 }
+
 
 .gg-menu {
     z-index: 1;
