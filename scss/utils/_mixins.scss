@@ -15,7 +15,7 @@
         }
     }
 
-    @else if $width ==$tablet {
+    @else if $width ==tablet {
         @media screen and (min-width: $tablet) {
             @content;
         }
@@ -32,4 +32,14 @@
             @content;
         }
     }
+}
+
+@mixin button($width, $height, $bg-color, $text-color, $border-radius) {
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: $border-radius;
+    border: none;
+    text-align: center;
 }

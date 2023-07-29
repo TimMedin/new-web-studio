@@ -10,11 +10,7 @@
 }
 
 .btn-about {
-    background-color: #F5F4FA;
-    width: 125px;
-    height: 38px;
-    border: none;
-    border-radius: 4px;
+    @include button(125px, 38px, #F5F4FA, #fff, 4px);
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;

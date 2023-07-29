@@ -447,12 +447,14 @@ address {
 .btn {
   width: 216px;
   height: 50px;
-  display: block;
-  margin: 0 auto;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: #2196F3;
+  color: #fff;
   border-radius: 4px;
   border: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn:active {
@@ -574,14 +576,17 @@ header {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   max-width: 1600px;
   height: 600px;
   background-image: url(/images/Img.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero-bg-2x.png);
+  }
 }
 @media screen and (max-width: 767.99px) {
   .hero {
@@ -758,11 +763,6 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .gg-menu {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 768px) {
   .logo {
     margin-right: 85px;
   }
@@ -780,10 +780,6 @@ header {
   background-color: #FFF;
   max-width: 480px;
   height: 796px;
-}
-
-.hidden {
-  display: none;
 }
 
 .menu {
@@ -847,6 +843,11 @@ header {
 .gg-menu {
   z-index: 1;
 }
+@media screen and (min-width: 768px) {
+  .gg-menu {
+    display: none;
+  }
+}
 
 #container {
   position: fixed;
@@ -858,13 +859,7 @@ header {
   height: 100%;
 }
 
-.hidden {
-  display: none;
-}
-
 .nav-mob-list {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 0;
   padding-bottom: 280px;
 }
@@ -888,8 +883,6 @@ header {
 }
 
 .contacts-mob {
-  display: flex;
-  flex-direction: column;
   padding-bottom: 44px;
 }
 
@@ -991,11 +984,13 @@ header {
 }
 
 .btn-about {
-  background-color: #F5F4FA;
   width: 125px;
   height: 38px;
-  border: none;
+  background-color: #F5F4FA;
+  color: #fff;
   border-radius: 4px;
+  border: none;
+  text-align: center;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -1170,4 +1165,19 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.hero, .nav-mob-list, .contacts-mob {
+  display: flex;
+  flex-direction: column;
 }
