@@ -115,7 +115,33 @@
             <h2 class="team__heading">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img class="team-img" src="/images/img-team.jpg" alt="Ігор Дем'яненко">
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/adaptive-img/man-one-1x.jpg 1x,
+                            ./images/adaptive-img/man-one-2x.jpg 2x
+                          "
+                          media="(min-width:1200px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/adaptive-img/man-tablet-1x.jpg 1x,
+                            ./images/adaptive-img/man-tablet-2x.jpg  2x
+                          "
+                          media="(min-width:768px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/adaptive-img/man-mobile-1x.jpg 1x,
+                            ./images/adaptive-img/man-mobile-2x.jpg 2x
+                          "
+                          media="(min-width:0px)"
+                        />
+                        <img
+                          src="./assets/imgs/our-team/First-man-phone-1x.jpg"
+                          alt="Ігор"
+                        />
+                      </picture>
                     <div class="team__info--box">
                         <h3 class="team__title">Ігор Дем'яненко</h3>
                         <p class="profeesion">Product Designer</p>
@@ -144,39 +170,37 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team-img" src="./images/img-team4.jpg" alt="Михайло Єрмаков">
+                    <!-- <img src="/images/adaptive-img/girl-mobile-1x.jpg" alt=""> -->
+                     <picture>
+                        <source
+                          srcset="
+                            ./images/adaptive-img/girl-two-1x.jpg 1x,
+                            ./images/adaptive-img/girl-two-2x.jpg 2x
+                          "
+                          media="(min-width:1200px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/adaptive-img/girl-tablet-1x.jpg 1x,
+                            ./images/adaptive-img/girl-tablet-2x.jpg  2x
+                          "
+                          media="(min-width:768px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/adaptive-img/girl-mobile-1x.jpg 1x,
+                            ./images/adaptive-img/girl-mobile-2x.jpg 2x
+                          "
+                          media="(min-width:0px)"
+                        />
+                        <img
+                          src="/images/adaptive-img/girl-two-1x.jpg 1x"
+                          alt="Ольга
+                        />
+                      </picture>
                     <div class="team__info--box">
-                        <h3 class="team__title">Михайло Єрмаков</h3>
-                        <p class="profeesion">UI Designer</p>
-                        <ul class="social__links">
-                            <li class="social__links--item">
-                                <a class="social__link" href="#">
-                                 <i class="icon icon-instagram-2 social__icon"></i>
-                                </a>
-                            </li>
-                            <li class="social__links--item">
-                                <a class="social__link" href="#">
-                                 <i class="icon icon-twitter-1-1 social__one"></i>
-                                </a>
-                            </li>
-                            <li class="social__links--item">
-                                <a class="social__link" href="#">
-                                    <i class="icon icon-facebook-1-1 social__icon"></i>
-                                </a>
-                            </li>
-                            <li class="social__links--item">
-                                <a class="social__link" href="">
-                                <i class="icon icon-linkedin-1 social__icon"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team__item">
-                    <img class="team-img" src="./images/img-team3.jpg" alt="Микола Тарасов">
-                    <div class="team__info--box">
-                        <h3 class="team__title">Микола Тарасов</h3>
-                        <p class="profeesion">Marketing</p>
+                        <h3 class="team__title">Ольга Рєпіна</h3>
+                        <p class="profeesion">Frontend Developer</p>
                         <ul class="social__links">
                             <li class="social__links--item">
                                 <a class="social__link" href="#">
@@ -202,10 +226,91 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team-img" src="./images/img-team2.jpg" alt="Ольга Рєпіна">
+                    <picture>
+                       <source
+                         srcset="
+                           ./images/adaptive-img/man-three-1x.jpg 1x,
+                           ./images/adaptive-img/man-three-2x.jpg 2x
+                         " 
+                         media="(min-width:1200px)"
+                       />
+                       <source
+                         srcset="
+                           ./images/adaptive-img/man-three-tablet-1x.jpg 1x,
+                           ./images/adaptive-img/man-three-tablet-2x.jpg  2x
+                         "
+                         media="(min-width:768px)"
+                       />
+                       <source
+                         srcset="
+                           ./images/adaptive-img/three-man-mobile-1x.jpg 1x,
+                           ./images/adaptive-img/three-man-mobile-2x.jpg 2x
+                         "
+                         media="(min-width:0px)"
+                       />
+                       <img
+                         src="/images/adaptive-img/man-three-1x.jpg"
+                         alt="Михайло"
+                       />
+                     </picture>
+                   <div class="team__info--box">
+                       <h3 class="team__title">Микола Тарасов</h3>
+                       <p class="profeesion">Marketing</p>
+                       <ul class="social__links">
+                           <li class="social__links--item">
+                               <a class="social__link" href="#">
+                                <i class="icon icon-instagram-2 social__icon"></i>
+                               </a>
+                           </li>
+                           <li class="social__links--item">
+                               <a class="social__link" href="#">
+                                <i class="icon icon-twitter-1-1 social__one"></i>
+                               </a>
+                           </li>
+                           <li class="social__links--item">
+                               <a class="social__link" href="#">
+                                   <i class="icon icon-facebook-1-1 social__icon"></i>
+                               </a>
+                           </li>
+                           <li class="social__links--item">
+                               <a class="social__link" href="">
+                               <i class="icon icon-linkedin-1 social__icon"></i>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </li>
+                <li class="team__item">
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/adaptive-img/man-four-1x.jpg 1x,
+                            ./images/adaptive-img/man-four-2x.jpg 2x
+                          "
+                          media="(min-width:1200px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/adaptive-img/man-four-tablet-1x.jpg 1x,
+                            ./images/adaptive-img/man-four-tablet-2x.jpg  2x
+                          "
+                          media="(min-width:768px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/adaptive-img/four-man-mobile-1x.jpg,
+                            ./images/adaptive-img/four-man-mobile-2x.jpg 2x
+                          "
+                          media="(min-width:0px)"
+                        />
+                        <img
+                          src="/images/adaptive-img/man-four-1x.jpg"
+                          alt="Ігор"
+                        />
+                      </picture>c
                     <div class="team__info--box">
-                        <h3 class="team__title">Ольга Рєпіна</h3>
-                        <p class="profeesion">Frontend Developer</p>
+                        <h3 class="team__title">Михайло Єрмаков</h3>
+                        <p class="profeesion">UI Designer</p>
                         <ul class="social__links">
                             <li class="social__links--item">
                                 <a class="social__link" href="#">

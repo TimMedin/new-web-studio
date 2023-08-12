@@ -986,8 +986,8 @@ header {
 .btn-about {
   width: 125px;
   height: 38px;
-  background-color: #F5F4FA;
-  color: #fff;
+  background: #F5F4FA;
+  color: #212121;
   border-radius: 4px;
   border: none;
   text-align: center;
@@ -998,6 +998,7 @@ header {
 }
 
 .btn-about:hover {
+  color: #FFF;
   background-color: #2196F3;
 }
 
